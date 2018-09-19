@@ -1,0 +1,375 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="121" name="Task1" created="2017-06-22.11:51:46.889" lastModified="2017-06-22.12:16:32.841" version="10.0.0" buildNumber="10.0.0.431">
+<st>
+<t id="102" nd="true">
+<sp>
+<t id="124">
+<rq id="125" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">1011</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">1011</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/1011</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="126" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*1011*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="104">
+<rq id="127" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">12345</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">12345</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/12345</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="128" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*12345*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;     &#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Use tibXML Packaging&quot;,&#13;&#10;         &quot;name&quot;: &quot;tibXMLPublicMsgFormat&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }   &#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="106">
+<rq id="129" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">23456</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">23456</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/23456</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="130" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*23456*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }      &#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="108">
+<rq id="131" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">abcdef</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">abcdef</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/abcdef</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="132" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*abcdef*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;    ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="110">
+<rq id="133" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">456_</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">456_</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/456_</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="134" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*456_*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;     ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="112">
+<rq id="135" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">defgh</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">defgh</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/defgh</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="136" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*defgh*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="114">
+<rq id="137" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">abc123</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">abc123</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/abc123</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="138" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*abc123*/}}&#13;&#10;&#9; &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="116">
+<rq id="139" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">789def</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">789def</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/789def</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="140" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9;&quot;Parameter&quot;: {{=request_URLPARAM0;/*789def*/}}&#13;&#10;&#9;&quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;     ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="118">
+<rq id="141" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">89kl</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">89kl</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/89kl</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="142" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;&quot;Parameter&quot;: {{=request_URLPARAM0;/*89kl*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="120">
+<rq id="143" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">91011</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">91011</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/91011</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="144" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;      {&#13;&#10;&#9; &quot;Parameter&quot;: {{=request_URLPARAM0;/*91011*/}}&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Allow override of filename via HTTP parameter&quot;,&#13;&#10;         &quot;name&quot;: &quot;AllowOverrideFilename&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      },&#13;&#10;      {&#13;&#10;         &quot;defaultValue&quot;: null,&#13;&#10;         &quot;displayName&quot;: &quot;Duplicate Detection for Outbound&quot;,&#13;&#10;         &quot;name&quot;: &quot;dupDetectOutbound&quot;,&#13;&#10;         &quot;type&quot;: &quot;boolean&quot;&#13;&#10;      }&#13;&#10;    ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="145" op="GET /tpmRest/v1/participants/enabledProtocolPropertyValues/{URLPARAM0}/" tl="SIGNATURE">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">1011</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">tpmRest</p>
+<p n="HTTP-Segment-Attr-1">v1</p>
+<p n="HTTP-Segment-Attr-2">participants</p>
+<p n="HTTP-Segment-Attr-3">enabledProtocolPropertyValues</p>
+<p n="HTTP-Segment-Attr-4">1011</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/tpmRest/v1/participants/enabledProtocolPropertyValues/1011</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="146" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#13;&#10;   &quot;result&quot;: [&#13;&#10;  {&#13;&#10;  Input parameter is invalid&#13;&#10;  }&#13;&#10;  &#13;&#10;   ]&#13;&#10;}&#13;&#10;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="123" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="122" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

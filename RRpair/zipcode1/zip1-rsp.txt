@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetSupplierByZipCodeResponse xmlns="http://www.webservicex.net/">
+         <GetSupplierByZipCodeResult>true</GetSupplierByZipCodeResult>
+         <SupplierDataLists>
+            <SupplierDatas>
+               <SupplierData>
+                  <SupplierNumber>0194080005</SupplierNumber>
+                  <CompanyName>DOCS DRUGS LTD</CompanyName>
+                  <Address1>1020 MAPLE AVE</Address1>
+                  <Address2/>
+                  <City>LISLE</City>
+                  <Zip>{{=request_zip;/*13027*/}}</Zip>
+                  <ZipPlus4>IL</ZipPlus4>
+                  <Telephone>2329</Telephone>
+                  <Description>(630)968-4165</Description>
+                  <IsSupplierParticipating>04</IsSupplierParticipating>
+               </SupplierData>
+             </SupplierDatas>
+            <TotalRecords>1</TotalRecords>
+         </SupplierDataLists>
+      </GetSupplierByZipCodeResponse>
+   </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,6 @@
+POST /vses/j4xHDBZf8x3-9Hmsv25utXt2HZjEoNlliAx3LVkNoBDN4VxvYo-m/vsBuilderSessions
+
+{
+    "name": "test001",
+    "description": "Optional description"
+}

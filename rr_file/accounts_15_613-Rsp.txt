@@ -1,0 +1,18 @@
+{
+  "User" : {
+    "VersionId" : "1.0.0.0",
+    "Ml3pUserName" : "mobile_demo1@l3.com",
+    "FormFactorId" : "Phone",
+    "Ml3pContext" : "11",
+    "ChannelId" : "CustomerMobile10",
+    "SsoId" : "6d3c4f33-80cc-476c-8c21-4a412fd35dc9",
+    "IsMimic" : false,
+    "SsoUsername" : "mobile_demo1@l3.com",
+    "Ml3pPermissions" : [ "L3PP MyChangeRequests", "L3PP MyServices Enhanced Management", "L3PP Billing Regular User", "L3PP APM Manage Monitor", "L3PP MyServices Dynamic Capacity", "L3PP Billing Request", "L3PP Alerts", "L3PP MyServices", "L3PP Badge Access", "L3PP MyBilling Historical", "L3PP Orders", "L3PP Toll Free Management", "L3PP Voice Features", "L3PP Billing Payments", "L3PP Access", "L3PP MyChangeRequests TF And Call Forwarding", "L3PP Disconnect Requests", "L3PP MyChangeRequests Caller ID" ],
+    "ErrorCode" : 0,
+    "Id" : 0,
+    "HasError" : false
+  },
+  "ErrorCode" : 0,
+  "HasError" : false
+}

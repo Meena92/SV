@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV11:Envelope xmlns:SOAP-ENV11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tdsns0="http://www.webservicex.net/">
+    <SOAP-ENV11:Body>
+        <tdsns0:GetSupplierByZipCodeResponse>
+            <tdsns0:GetSupplierByZipCodeResult>true</tdsns0:GetSupplierByZipCodeResult>
+            <tdsns0:SupplierDataLists>
+                <tdsns0:SupplierDatas>
+                    <tdsns0:SupplierData>
+                        <tdsns0:SupplierNumber>45251-SB2-661</tdsns0:SupplierNumber>
+                        <tdsns0:CompanyName>Saffery Champness LTD</tdsns0:CompanyName>
+                        <tdsns0:Address1>HC-02 BZN 124523</tdsns0:Address1>
+                        <tdsns0:Address2/>
+                        <tdsns0:City>Mills</tdsns0:City>
+                        <tdsns0:Zip>{{=request_zip;/*06063*/}}</tdsns0:Zip>
+                        <tdsns0:ZipPlus4>WY</tdsns0:ZipPlus4>
+                        <tdsns0:Telephone>5735</tdsns0:Telephone>
+                        <tdsns0:Description>(513)593-1951</tdsns0:Description>
+                        <tdsns0:IsSupplierParticipating>04</tdsns0:IsSupplierParticipating>
+                    </tdsns0:SupplierData>
+                </tdsns0:SupplierDatas>
+                <tdsns0:TotalRecords>1</tdsns0:TotalRecords>
+            </tdsns0:SupplierDataLists>
+        </tdsns0:GetSupplierByZipCodeResponse>
+    </SOAP-ENV11:Body>
+</SOAP-ENV11:Envelope>

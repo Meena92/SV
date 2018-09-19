@@ -1,0 +1,15 @@
+{
+    "_links": {
+        "self": {
+            "href": "http://localhost:9400/lisa-virtualize-invoke/api/v2/vses/j4xHDBZf8x3-9Hmsv25utXt2HZjEoNlliAx3LVkNoBDN4VxvYo-m/vsBuilderSessions/efrsjq_mqVTNwXYsmQ9vxE1dYTwWNy07FD8ioKuZmVNugsgWHAU"
+        }
+    }
+    "id": "efrsjq_mqVTNwXYsmQ9vxE1dYTwWNy07FD8ioKuZmVNugsgWHAU",
+    "modifyDate": "2016-12-20T14:34:21-06:00",
+    "defaultNonLeafTolerance": "WIDE",
+    "name": "test001",
+    "description": "Optional description",
+    "defaultLeafTolerance": "LOOSE",
+    "version": "2",
+    "createDate": "2017-06-14T14:34:21-06:00"
+}

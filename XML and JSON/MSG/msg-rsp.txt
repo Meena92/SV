@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<result>
+ <message>
+  <id>4458</id>
+  <subject>Hi there</subject>
+  <author_id>5</author_id>
+  <message_status>read</message_status>
+   <links>
+    <self>https://api.schoology.com/v1/messages/inbox/4458</self>
+  </links>
+ </message>
+ <message>
+  <id>4455</id>
+  <subject>What's up?</subject>
+  <author_id>7</author_id>
+  <message_status>unread</message_status>
+  <links>
+    <self>https://api.schoology.com/v1/messages/inbox/4455</self>
+  </links>
+ </message>
+</result>

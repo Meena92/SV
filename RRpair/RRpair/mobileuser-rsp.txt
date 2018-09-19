@@ -1,0 +1,26 @@
+{
+  "User" : {
+    "VersionId" : "1.0.0.0",
+    "Email" : "mobile_demo1@l3.com",
+    "PrimaryPhone" : "16052748963",
+    "DomainName" : "11",
+    "FirstName" : "Mobile1",
+    "FormFactorId" : "Phone",
+    "City" : "Aaron",
+    "ChannelId" : "CustomerMobile10",
+    "CompanyName" : "",
+    "TimeZone" : "",
+    "Username" : "mobile_demo1@l3.com",
+    "State" : "KY",
+    "Country" : "UNITED STATES",
+    "ErrorCode" : 0,
+    "LastName" : "Demo1",
+    "Id" : 0,
+    "ErrorMessage" : "",
+    "HasError" : false,
+    "Password" : ""
+  },
+  "ErrorCode" : 0,
+  "ErrorMessage" : "",
+  "HasError" : false
+}

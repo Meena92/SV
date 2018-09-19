@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Wed Aug 16 15:05:50 IST 2017 -->
+
+
+<Results name="Task3">
+
+
+    <Result node="Parse Text as Response">
+      <content type="java.lang.String" charset="UTF-8"><![CDATA[ew0KInVzZXIiOnsNCiJlbWFpbEFkZHJlc3MiOiJoZ3R5QHRlc3QuY29tIiwNCiJmaXJzdE5hbWUiOiJ0eXVpIiwNCiJsYXN0TmFtZSI6Iml1amsiLA0KInBhc3N3b3JkIjoiaGdmciIsDQoidXNlcm5hbWUiOiJkZmVyX3BvaSINCn0NCn0=]]></content>
+    </Result>
+
+
+</Results>

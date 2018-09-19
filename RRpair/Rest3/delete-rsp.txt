@@ -1,0 +1,24 @@
+{
+    "document": {
+        "type": "instance",
+"namespace": "fulfillment.order.services",
+        "id": "item.pick.validate",
+"version": "1.0"
+    },
+    "node": {
+"nodeId": 5578,
+"countryCode": "US"
+    },
+    "validationResponse": [
+        {
+"value": "1234",
+"type": "serial Number",
+"result": "FAILURE"
+        },
+        {
+"value": "60958523083",
+"type": "override upc",
+"result": "FAILURE"
+        }
+    ]
+}

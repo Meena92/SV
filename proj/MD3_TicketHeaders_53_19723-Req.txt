@@ -1,0 +1,27 @@
+POST /api/Tickets/SaTroubleTicketHeaders HTTP/1.1
+authorization: Basic MC4wLjAuMDptb2JpbGVfZGVtbzJAbDMuY29tOkFiYzEyMzQ1Njc4
+content-type: application/json
+connection: keep-alive
+
+{
+  "Condition" : "OPEN",
+  "CloseDateFrom" : "",
+  "PageSize" : 0,
+  "CloseDateTo" : "",
+  "CreateDateTo" : "",
+  "PageIndex" : 0,
+  "IncludePotentialTrouble" : false,
+  "ClientPlatform" : {
+    "Identifier" : "iOS",
+    "ConnectionType" : "LAN",
+    "FormFactor" : "Phone",
+    "Version" : "9.3.2",
+    "Channel" : "CustomerMobile10",
+    "ClientSWVersion" : "0.1.53.0006",
+    "Model" : "iPhone7,2",
+    "IpAddress" : "0.0.0.0",
+    "UUID" : "7CFF33F8-BA01-4767-8978-390540CFEA77"
+  },
+  "Uri" : "http://devmaestrosvc1/api/Tickets/SaTroubleTicketHeaders",
+  "CreateDateFrom" : ""
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV11:Envelope xmlns:SOAP-ENV11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tdsns0="http://www.webservicex.net/">
+    <SOAP-ENV11:Body>
+        <tdsns0:GetSupplierByZipCodeResponse>
+            <tdsns0:GetSupplierByZipCodeResult>true</tdsns0:GetSupplierByZipCodeResult>
+            <tdsns0:SupplierDataLists>
+                <tdsns0:SupplierDatas>
+                    <tdsns0:SupplierData>
+                        <tdsns0:SupplierNumber>13321-634-003</tdsns0:SupplierNumber>
+                        <tdsns0:CompanyName>Volkswagen United Kingdom LTD</tdsns0:CompanyName>
+                        <tdsns0:Address1>CARR  SAN JOSE 87-1</tdsns0:Address1>
+                        <tdsns0:Address2/>
+                        <tdsns0:City>Herndon</tdsns0:City>
+                        <tdsns0:Zip>{{=request_zip;/*70394*/}}</tdsns0:Zip>
+                        <tdsns0:ZipPlus4>VA</tdsns0:ZipPlus4>
+                        <tdsns0:Telephone>8531</tdsns0:Telephone>
+                        <tdsns0:Description>(886)578-1927</tdsns0:Description>
+                        <tdsns0:IsSupplierParticipating>04</tdsns0:IsSupplierParticipating>
+                    </tdsns0:SupplierData>
+                </tdsns0:SupplierDatas>
+                <tdsns0:TotalRecords>1</tdsns0:TotalRecords>
+            </tdsns0:SupplierDataLists>
+        </tdsns0:GetSupplierByZipCodeResponse>
+    </SOAP-ENV11:Body>
+</SOAP-ENV11:Envelope>

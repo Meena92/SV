@@ -1,0 +1,12 @@
+{
+"Details":{
+"Name":"ABC",
+"ID":"321",
+"Email":"abc@domain.com"
+},
+"Details2":{
+"Name":"DEF",
+"ID":"123",
+"Email":"DEF@domain.com"
+}
+}

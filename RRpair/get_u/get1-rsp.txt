@@ -1,0 +1,24 @@
+{
+  "Location": {
+    "LocationDetails": [
+      {
+        "PostalAddress": {
+          "addressLine1": "Flat 6, Private Shop",
+          "addressLine2": "20,SouthHampton Street",
+          "GeopgraphicAddress": {
+            "UrbanPropertyAddress": {
+              "locality": "Reading",	
+              "postcode": "RG1 2QX"
+            },
+            "stateOrProvince": "East Reading",
+            "country": "United Kingdom"
+          }
+        },
+        "SiteAddress": {
+          "longitude": "51.44939",
+          "latitude": "-0.96950"
+        }
+      }
+    ]
+  }
+}

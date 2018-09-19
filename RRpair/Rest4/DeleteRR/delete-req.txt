@@ -1,0 +1,1 @@
+Delete /fulfillment-order-services/resources/item/pick/validate?userId=user&nodeId=5578&countryCode=US&upc=123&pickUpcNbr=60958523083&pickUpcType=substitute&serialNbr=1234&serialNbrFmt=23234&fulfillOrderId=2402 

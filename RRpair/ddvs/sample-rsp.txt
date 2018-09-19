@@ -1,0 +1,7 @@
+<CUSTOMER xmlns:xlink="http://www.w3.org/1999/xlink">
+<ID>17</ID>
+<FIRSTNAME>Laura</FIRSTNAME>
+<LASTNAME>Ott</LASTNAME>
+<STREET>443 Seventh Av.</STREET>
+<CITY>Lyon</CITY>
+</CUSTOMER

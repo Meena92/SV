@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV11:Envelope xmlns:SOAP-ENV11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tdsns0="http://www.webservicex.net/">
+    <SOAP-ENV11:Header/>
+    <SOAP-ENV11:Body>
+        <tdsns0:GetSupplierByZipCode>
+            <tdsns0:zip>60532</tdsns0:zip>
+        </tdsns0:GetSupplierByZipCode>
+    </SOAP-ENV11:Body>
+</SOAP-ENV11:Envelope>

@@ -1,0 +1,1 @@
+Get /sqlrest/CUSTOMER/17

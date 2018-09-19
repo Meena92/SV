@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+
+<VSModel name="post_xml" version="5">
+
+<meta>
+   <create version="10.0.0" buildNumber="10.0.0.431" author="admin" date="06/19/2017" host="inbasdpc10722" />
+   <lastEdited version="10.0.0" buildNumber="10.0.0.431" author="admin" date="06/19/2017" host="inbasdpc10722" />
+</meta>
+
+<id>FA44842A54B411E780A6D8CB8A8AB1DA</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC4wLjAgKDEwLjAuMC40MzEpJm5vZGVzPS03MDIxMDI5OQ==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+<associatedResources>
+<file type="rawTransactionStore">{{LISA_RELATIVE_PROJ_ROOT}}/Data/post_xml.vts</file>
+<file type="session">{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/VRScenarios/post_xml.vr2</file>
+</associatedResources>
+    <Node name="Virtual HTTPS Listener 7000" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Prepare Request" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.vse.stateful.common.DataProtocolFilter">
+        <valueToFilterKey>lisa.vse.request</valueToFilterKey>
+<dataProtocol>com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol</dataProtocol>
+<processRequests>true</processRequests>
+<processResponses>false</processResponses>
+<CustomFilterData>
+<requestSideUnparsed>true</requestSideUnparsed>
+<rules>
+<rule>
+<operation>POST /REST/SampleRequestURI/</operation>
+</rule>
+</rules>
+</CustomFilterData>
+      </Filter>
+
+<outputAsObject>false</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>7000</listenPort>
+<basePath>/</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node name="Prepare Request" log=""
+          type="com.itko.lisa.utils.ParseTextContentNode" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Service Router" > 
+
+<text>e3tsaXNhLnZzZS5yZXF1ZXN0fX0=</text>
+<propKey>lisa.vse.request</propKey>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Parse Text as Response" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;&#10;&#10;/* other values: &#10;&#9;ExecutionMode.TRACK;&#10;&#9;ExecutionMode.STAND_IN;&#10;&#9;ExecutionMode.LIVE;&#10;&#9;ExecutionMode.FAILOVER;&#10;&#9;ExecutionMode.VALIDATION;&#10;&#9;ExecutionMode.LEARNING;&#10;*/&#10;</script>
+<supportedModes>
+<mode>LIVE</mode>
+<mode>FAILOVER</mode>
+<mode>DYNAMIC</mode>
+<mode>EFFICIENT</mode>
+<mode>TRACK</mode>
+<mode>VALIDATION</mode>
+<mode>LEARNING</mode>
+<mode>STAND_IN</mode>
+</supportedModes>
+<liveInvocationStep>Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</liveInvocationStep>
+    </Node>
+
+
+    <Node name="Parse Text as Response" log=""
+          type="com.itko.lisa.utils.ParseTextContentNode" 
+          version="1" 
+          uid="C4F1E3F054B511E7A8ADD8CB8A8AB1DA" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="true" 
+          next="VS Image Response Selection" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Genre1</prop>
+<xpathq>/catalog/book/genre/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Author1</prop>
+<xpathq>/catalog/book/author/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Title1</prop>
+<xpathq>/catalog/book/title/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Price1</prop>
+<xpathq>/catalog/book/price/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Date_of_Publish</prop>
+<xpathq>/catalog/book/publish_date/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Parse Text as Response.rsp</valueToFilterKey>
+<prop>Description</prop>
+<xpathq>/catalog/book/description/text()</xpathq>
+<nsMap0>=</nsMap0>
+      </Filter>
+
+<text>PGNhdGFsb2c+DQogICA8Ym9vayA+DQogICAgICA8YXV0aG9yPkdhbWJhcmRlbGxhLCBNYXR0aGV3PC9hdXRob3I+DQogICAgICA8dGl0bGU+WE1MIERldmVsb3BlcidzIEd1aWRlPC90aXRsZT4NCiAgICAgIDxnZW5yZT5Db21wdXRlcjwvZ2VucmU+DQogICAgICA8cHJpY2U+NDQuOTU8L3ByaWNlPg0KICAgICAgPHB1Ymxpc2hfZGF0ZT4yMDAwLTEwLTAxPC9wdWJsaXNoX2RhdGU+DQogICAgICA8ZGVzY3JpcHRpb24+QW4gaW4tZGVwdGggbG9vayBhdCBjcmVhdGluZyBhcHBsaWNhdGlvbnMgPC9kZXNjcmlwdGlvbj4NCiAgIDwvYm9vaz4NCjwvY2F0YWxvZz4=</text>
+<propKey></propKey>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Prepare Response" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</log>
+<then>Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If learning" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Learning, branching to Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</log>
+<then>Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>LEARNING</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/Images/post_xml.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>false</outputAsObject>
+<liveInvocationStep>Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}</liveInvocationStep>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Prepare Response" log=""
+          type="com.itko.lisa.utils.ParseTextContentNode" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual HTTPS Responder" > 
+
+<text>e3tsaXNhLnZzZS5yZXNwb25zZX19</text>
+<propKey>lisa.vse.response</propKey>
+    </Node>
+
+
+    <Node name="Virtual HTTPS Responder" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual HTTPS Listener 7000" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual HTTPS Live Invocation {{LIVE_INVOCATION_PORT}}" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpLiveInvocationStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Prepare Response" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If learning" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Learning, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>LEARNING</executionMode>
+</CheckResult>
+
+<outputAsObject>false</outputAsObject>
+<onExceptionStep>Live System Failure</onExceptionStep>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<vseLookupStep>VS Image Response Selection</vseLookupStep>
+<targetServer>{{LIVE_INVOCATION_SERVER}}</targetServer>
+<targetPort>{{LIVE_INVOCATION_PORT}}</targetPort>
+<hostHeaderPassThrough>false</hostHeaderPassThrough>
+<useSSLToServer>false</useSSLToServer>
+<useSSL>false</useSSL>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Prepare Response" > 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Live System Failure" log=""
+          type="com.itko.lisa.test.NoTransNode" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If failover" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Failover, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>FAILOVER</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If standing in" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Stand In, branching to Prepare Response</log>
+<then>Prepare Response</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>STAND_IN</executionMode>
+</CheckResult>
+
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="FA44843054B411E780A6D8CB8A8AB1DA" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="FA44842E54B411E780A6D8CB8A8AB1DA" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="FA44842C54B411E780A6D8CB8A8AB1DA" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

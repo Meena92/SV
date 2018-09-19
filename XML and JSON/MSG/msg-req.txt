@@ -1,0 +1,1 @@
+GET /api.schoology.com/v1/messages/inbox HTTP/1.1

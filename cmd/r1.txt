@@ -1,0 +1,2 @@
+@echo off
+cd /d D:\Devtest\bin\ServiceImageManager.exe --vrs=D:\DevTest\Projects\D1\rest4.vrs --si-file=D:\DevTest\Projects\D1\VirtualServices\Images\rr10.vsi --vsm-file=D:\DevTest\Projects\D1\VirtualServices\rr10.vsm --record --go

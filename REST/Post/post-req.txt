@@ -1,0 +1,9 @@
+POST /api/v1/books HTTP/1.1
+accept: application/json
+content-Type: application/json
+
+{
+  "id": "24",
+  "title": "Behavior-Driven Development",
+  "author": "Viktor Farcic"
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.logobject.ch/ns/KopaWfm/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KopaWfm" targetNamespace="http://www.logobject.ch/ns/KopaWfm/">
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.logobject.ch/ns/KopaWfm/">
+			<xsd:element name="koPaStateFio">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="taskHeader" type="tns:TaskHeader"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="koPaState" type="tns:KoPaState"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="workInfo" type="tns:WorkInfo"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="ipData" type="tns:IpData"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="reportData" type="tns:ReportData"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="workPackage" type="tns:WorkPackage"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="koPaStateFioResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:Response"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="TaskHeader">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="fioId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="fioKoPaId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="koPaId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="requestId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appStartDate" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appEndDate" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="integrationId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="outOfSla" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="outOfSlaReason" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comment" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="KoPaState">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="date" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="WorkInfo">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="infoText" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="infoCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="infoComment" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="IpData">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ipCompany" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ipFirstName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ipLastName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ipPhone" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ReportData">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="orderCompletionCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="orderCompletionText" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="installationComment" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="inventory" type="tns:InventoryData"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="WorkPackage">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="workPackageCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="quantity" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="InventoryData">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="otoKey" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="otoType" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="otoOnly" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="partnerLabel" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="installationDate" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="flatId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="flatMemo" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="installationPartner" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="lengthInhouseCable" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="connectionBuildingentryBep" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="trayEquipmentBep" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="connectionBepVerticalShaft" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="infrastructureVerticalShaft" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="jumperVerticalShaft" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="infrastructureFlat" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="connectionVerticalShaftOto" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="endpointFlat" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="commentPartner" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ErrorStatus">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="errorCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="errorText" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="IntegrationHeader">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="geId" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Response">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="errorStatus" type="tns:ErrorStatus"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="integrationHeader" type="tns:IntegrationHeader"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="koPaStateFioRequest">
+		<wsdl:part name="parameters" element="tns:koPaStateFio"/>
+	</wsdl:message>
+	<wsdl:message name="koPaStateFioResponse">
+		<wsdl:part name="parameters" element="tns:koPaStateFioResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="KopaWfm">
+		<wsdl:operation name="koPaStateFio">
+			<wsdl:input message="tns:koPaStateFioRequest"/>
+			<wsdl:output message="tns:koPaStateFioResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="KopaWfmSOAP" type="tns:KopaWfm">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="koPaStateFio">
+			<soap:operation soapAction="http://www.logobject.ch/ns/KopaWfm/koPaStateFio"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="KopaWfm">
+		<wsdl:documentation>Interface with WSG Cooperation Partner Portal
+Author: Ortwin Glueck, LogObject AG
+Version: 0.9
+Spec: Spec_WFM-TIBCO_FTTH-Inhouse_FIO_KoPa_v0.9.pdf
+		</wsdl:documentation>
+		<wsdl:port name="KopaWfmSOAP" binding="tns:KopaWfmSOAP">
+			<soap:address location="http://sg2110p.corproot.net:8080/axis/services/KopaWfmSOAP"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

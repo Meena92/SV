@@ -1,0 +1,41 @@
+{
+   "result": [
+      {
+         "defaultValue": 12345,
+         "displayName": "Allow override of filename via HTTP parameter",
+         "name": "AllowOverrideFilename",
+         "type": "boolean"
+      },
+      {
+         "defaultValue": null,
+         "displayName": "Duplicate Detection for Outbound",
+         "name": "dupDetectOutbound",
+         "type": "boolean"
+      },
+      {
+         "defaultValue": null,
+         "displayName": "Duplicate Detection for Inbound",
+         "name": "dupDetectInbound",
+         "type": "boolean"
+      },
+      {
+         "defaultValue": null,
+         "displayName": "Use tibXML Packaging",
+         "name": "tibXMLPublicMsgFormat",
+         "type": "boolean"
+      },
+      {
+         "defaultValue": null,
+         "displayName": "Store and Forward Authentication Mode",
+         "name": "SFAuthenticationMode",
+         "type": "string"
+      },
+      {
+         "defaultValue": null,
+         "displayName": "Store and Forward Authentication Mode Proxy Agent",
+         "name": "ProxySFAuthenticationMode",
+         "type": "string"
+      }
+   ]
+}
+

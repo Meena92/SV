@@ -1,0 +1,3 @@
+<Bookorder>
+   <status>Success</status>
+</Bookorder>

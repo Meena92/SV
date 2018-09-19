@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <Body xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <soapenv:Fault>
+         <faultcode xmlns="">soapenv:Server</faultcode>
+         <faultstring xmlns=""/>
+         <detail xmlns="">
+            <ns0:FaultMessage xmlns:ns0="http://www.abercrombie.com/ns/Schemas/Fault/2">
+               <ns0:Faultcode>ANF-000</ns0:Faultcode>
+               <ns0:FaultDescription>No records found.</ns0:FaultDescription>
+               <ns0:Detail/>
+            </ns0:FaultMessage>
+         </detail>
+      </soapenv:Fault>
+   </Body>
+</soapenv:Envelope>

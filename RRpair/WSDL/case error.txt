@@ -1,0 +1,1 @@
+I am unable to launch GT subset either from desktop or from datamaker. When i am trying to launch subset from data maker it is asking me to create profile for the repository and it is getting aborted. When i try to launch from desktop error message is popping stating TCP/IP protocol error.

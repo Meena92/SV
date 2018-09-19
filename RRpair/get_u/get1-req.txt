@@ -1,0 +1,2 @@
+GET /cit1/apigw/tibs/addrresschk/V1/retrieveLocationDetails?apikey=rm85qrcpgnxw9e5armx8rqte&postcode=RG1 2QX
+

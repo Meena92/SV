@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <Body xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <GetSizeByKeyItemResponse version="1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://anfcorp.com/service/schema/ki/messages/" xmlns:tns="http://anfcorp.com/rms/KeyItem/definitions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="">
+         <keyItemSize>
+            <deptNumber>123</deptNumber>
+            <keyItemNumber>44</keyItemNumber>
+            <sizeCode>0031</sizeCode>
+            <sizeBucketGID>333</sizeBucketGID>
+            <sizeBucketGID1/>
+         </keyItemSize>
+         <keyItemSize>
+            <deptNumber>123</deptNumber>
+            <keyItemNumber>44</keyItemNumber>
+            <sizeCode>0032</sizeCode>
+            <sizeBucketGID>333</sizeBucketGID>
+            <sizeBucketGID1/>
+         </keyItemSize>
+         <keyItemSize>
+            <deptNumber>123</deptNumber>
+            <keyItemNumber>44</keyItemNumber>
+            <sizeCode>0033</sizeCode>
+            <sizeBucketGID>333</sizeBucketGID>
+            <sizeBucketGID1/>
+         </keyItemSize>
+         <keyItemSize>
+            <deptNumber>123</deptNumber>
+            <keyItemNumber>44</keyItemNumber>
+            <sizeCode>0034</sizeCode>
+            <sizeBucketGID>333</sizeBucketGID>
+            <sizeBucketGID1/>
+         </keyItemSize>
+         <keyItemSize>
+            <deptNumber>123</deptNumber>
+            <keyItemNumber>44</keyItemNumber>
+            <sizeCode>0035</sizeCode>
+            <sizeBucketGID>333</sizeBucketGID>
+            <sizeBucketGID1/>
+         </keyItemSize>
+      </GetSizeByKeyItemResponse>
+   </Body>
+</soapenv:Envelope>

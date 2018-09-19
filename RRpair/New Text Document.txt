@@ -1,0 +1,3 @@
+Error getting response:org.apache.http.conn.HttpHostConnectException:Connection to http://localhost:15404 refused
+
+Working on integration of continuous integration and service virtualization tools and I need internet access for running those applications. We need  access to blogs,forums and videos for learning purpose.

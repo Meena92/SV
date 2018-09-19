@@ -1,0 +1,7 @@
+POST /api/sec/contacts/get-available-appointment-time-v1?key1=value1&key2=value2 HTTP/1.1
+accept: application/json
+content-Type: application/json
+Connection: Keep-Alive
+User-Agent: LISA
+Custom-Header: MyHeaderVal
+{ "lisa-meta":{ "HTTP-Method":"POST /api/sec/contacts/get-available-appointment-time-v1", "OLB_ACCESS_ID":"41472851", "content-type":"application/json", "Cookie":"SMSESSION=41472851" }, "meta":{ "lang":"en", "appVersion":"1.0.0.0", "osName":"ios", "osVersion":"6.0.0", "deviceModel":"iPad3", "deviceType":"iPad", "deviceAppToken": "xxxxxxxxxxx-TBD-xxxxxxxxxxxxx", "ipAddress": "0.0.0.0" }, "challengeRequest":{ "deviceFingerprint":"xxxxx-xxxxx-xxxxx-fingerprint-to-be-generated-by-RSA-SDK-xxxxx-xxxxx-xxxxx-", "sessionCorrelationId":"XXXXXXXXXXXXXXXXXXXXXXX" }, "request":{ "topicId":1 } }

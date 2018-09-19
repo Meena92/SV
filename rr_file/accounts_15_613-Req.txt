@@ -1,0 +1,19 @@
+POST /api/Accounts/Dna HTTP/1.1
+connection: keep-alive
+content-type: application/json
+authorization: Basic MC4wLjAuMDptb2JpbGVfZGVtbzFAbDMuY29tOkFiYzEyMzQ1Njc4
+
+{
+  "ClientPlatform" : {
+    "Identifier" : "iOS",
+    "ConnectionType" : "LAN",
+    "FormFactor" : "Phone",
+    "Version" : "9.3.2",
+    "Channel" : "CustomerMobile10",
+    "ClientSWVersion" : "0.1.53.0006",
+    "Model" : "iPhone7,2",
+    "IpAddress" : "0.0.0.0",
+    "UUID" : "7CFF33F8-BA01-4767-8978-390540CFEA77"
+  },
+  "Uri" : "/api/Accounts/Dna"
+}

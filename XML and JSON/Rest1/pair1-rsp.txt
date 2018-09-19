@@ -1,0 +1,28 @@
+{
+  "output": {
+    "hundredPercentMatch": true,
+    "streetLineMatch": true,
+    "cityStatePostalMatch": true,
+    "cleansedAddress": {
+      "address1": "6201 Windhaven Pkwy",
+      "address2": "Apt 1025",
+      "city": "Plano",
+      "stateOrProvinceCode": "TX",
+      "postalCode": "75093",
+      "countryCode": "US"
+    },
+    "standarizedAddress": {
+      "address1": "6201 WINDHAVEN PKWY",
+      "address2": "APT 1025",
+      "city": [
+        "PLANO"
+      ],
+      "stateOrProvinceCode": "TX",
+      "postalCode": "750932104",
+      "countryCode": "US",
+      "residential": false
+    },
+    "alerts": []
+  },
+  "successful": true
+}

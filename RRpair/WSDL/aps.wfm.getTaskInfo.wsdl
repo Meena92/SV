@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 (http://www.altova.com) by XMLSpy 2012 Enterprise Ed. Release 2 (Swisscom (Schweiz) AG) -->
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.logobject.ch/ns/inquiry" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InquiryWfm" targetNamespace="http://www.logobject.ch/ns/inquiry">
+	<wsdl:documentation>$URL: svn://mstlcvs.swissptt.ch/EAI/EAI/integration/components/OX/OX.mLogistics/tags/1703.0.0_001/OX.mLogistics-src/Processes/mLogistics/Appointment/Resources/WSDL/InquiryWfm.wsdl $
+$Id: InquiryWfm.wsdl 228530 2014-03-21 09:41:48Z tgdloig2 $
+$Date: 2014-03-21 10:41:48 +0100 (Fri, 21 Mar 2014) $
+$Author: tgdloig2 $
+	</wsdl:documentation>
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.logobject.ch/ns/inquiry">
+			<xsd:element name="getTaskInfo">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="syncId" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getTaskInfoResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:Response"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="Response">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="task" type="tns:Task"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="status" type="tns:ResponseStatus"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ResponseStatus">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Task">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="businessLine" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appointment" type="tns:Appointment"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="status" type="tns:TaskStatus"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="workInfo" type="tns:WorkInfo"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="completion" type="tns:Completion"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="partnerCompany" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Appointment">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="TaskStatus">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="WorkInfo">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comment" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Completion">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="notice" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getTaskInfoRequest">
+		<wsdl:part name="parameters" element="tns:getTaskInfo"/>
+	</wsdl:message>
+	<wsdl:message name="getTaskInfoResponse">
+		<wsdl:part name="parameters" element="tns:getTaskInfoResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="InquiryWfm">
+		<wsdl:operation name="getTaskInfo">
+			<wsdl:input message="tns:getTaskInfoRequest"/>
+			<wsdl:output message="tns:getTaskInfoResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="InquiryWfmSOAP" type="tns:InquiryWfm">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getTaskInfo">
+			<soap:operation soapAction="http://www.logobject.ch/ns/inquiry/getTaskInfo"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="InquiryWfm">
+		<wsdl:documentation>Author: Ortwin Glueck, LogObject AG
+Version: 2
+Spec: WFM_Inquiry_Interface_v1-1.pdf
+		</wsdl:documentation>
+		<wsdl:port name="SOAP" binding="tns:InquiryWfmSOAP">
+			<soap:address location="http://www.example.org/"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

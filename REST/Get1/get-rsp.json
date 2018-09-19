@@ -1,0 +1,12 @@
+[
+{  
+      "class":"com.ca.lisa.demo.CarMake",
+      "id":1,
+      "name":"Acura"
+},
+{  
+      "class":"com.ca.lisa.demo.CarMake",
+      "id":2,
+      "name":"Audi"
+}
+]

@@ -1,0 +1,1 @@
+cd /d D:\DevTest\bin\ServiceImageManager.exe --vrs=D:\DevTest\Projects\D1\getrest.vrs --si-file=D:\DevTest\Projects\D1\VirtualServices\Images\rr25.vsi --vsm-file=D:\DevTest\Projects\D1\VirtualServices\rr25.vsm --record --go

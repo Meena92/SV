@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aps:bookAppointmentResponse xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                             xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                             xmlns:aps="aps.mLogistics.appBooking.v2">
+   <aps:envelope>
+      <aps:appointment>
+         <aps:id>100299</aps:id>
+         <aps:businessLine>30</aps:businessLine>
+         <aps:serviceType>OSI-Appointment</aps:serviceType>
+         <aps:expirationDateTime>2016-12-22T17:43:53+01:00</aps:expirationDateTime>
+      </aps:appointment>
+      <aps:responseStatus>
+         <aps:code>0</aps:code>
+         <aps:text>success</aps:text>
+      </aps:responseStatus>
+   </aps:envelope>
+</aps:bookAppointmentResponse>

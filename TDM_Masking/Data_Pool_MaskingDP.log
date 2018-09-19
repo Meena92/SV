@@ -1,0 +1,40 @@
+﻿Log for Data Pool: MaskingDP	4.0.0.16 (S11) 3.2G
+
+Publish to Data Target (Profile - Travel_e) schema dbo
+Start date and time: 2/19/2018 15:12:07
+
+Default values used for Variables
+
+Publish to Data Target (Profile - Travel_e) schema dbo
+100000 Iterations
+Start date and time: 2/19/2018 15:12:07
+Initialising datastores: 2/19/2018 15:12:07
+
+Status	Table                         	Table Location                	Seq	Rows	Comments
+Publish	PEOPLE                        	dbo                           	1	1	0	
+
+Pre-publish actions: 2/19/2018 15:12:07
+
+Data Preparation starting: 2/19/2018 15:12:07
+
+Data Preparation 1st iteration done: 2/19/2018 15:12:08
+Elapsed time: 1 seconds
+
+Verification starting: 2/19/2018 15:57:16
+
+Data Preparation End date and time: 2/19/2018 15:57:16
+Elapsed time: 2709 seconds
+
+Data output starting: 2/19/2018 15:57:16
+
+Storing column values: 2/19/2018 15:58:55
+NO column values stored
+NO xref values stored
+
+Post-publish actions: 2/19/2018 15:58:55
+
+Finishing: 2/19/2018 15:58:55
+
+End date and time: 2/19/2018 15:58:55
+Total Elapsed time: 2808 seconds
+100000 row(s) inserted into table PEOPLE.

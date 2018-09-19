@@ -1,0 +1,1 @@
+http://APPSERVER:8080/itkoExamples/EJB3UserControlBean?wsdl  

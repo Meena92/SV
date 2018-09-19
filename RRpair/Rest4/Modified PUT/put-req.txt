@@ -1,0 +1,10 @@
+PUT /rest-example/control/users/save
+
+{"USER": {
+"emailAddress":"test@test.com",
+"firstName":"first-9",
+"lastName":"last-9",
+"password":"aaaaaaaa",
+"username":"dmxxx-009"
+}
+}

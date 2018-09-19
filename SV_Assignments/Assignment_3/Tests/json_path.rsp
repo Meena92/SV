@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Results name="json_path">
+
+
+    <Result node="Parse Text as Response">
+      <content charset="UTF-8" type="java.lang.String"><![CDATA[ew0KInVzZXIiOnsNCiJlbWFpbEFkZHJlc3MiOiJhYmNAdGVzdC5jb20iLA0KImZpcnN0TmFtZSI6IkFiYyIsDQoibGFzdE5hbWUiOiJjZGUiLA0KInBhc3N3b3JkIjoiYmJiYiIsDQoidXNlcm5hbWUiOiJhYmNfY2RlIg0KfQ0KfQ==]]></content>
+    </Result>
+
+
+</Results>

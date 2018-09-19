@@ -1,0 +1,84 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://localhost:8080/lisabank/home.do;jsessionid=8A4FFAC23A5CB3D9EB838B463ED5C777"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "username"
+      },
+      "text": "lisa_simpson",
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "password"
+      },
+      "text": "golisa",
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//table[@id='t11']/tbody/tr[2]/td/table/tbody/tr[6]/td/input"
+      },
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "new_account"
+      },
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "name"
+      },
+      "text": "Chck",
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "balance"
+      },
+      "text": "5000",
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//td[@class='secondary']/input"
+      },
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='maincontent']/table/tbody/tr[3]/td[2]/table/tbody/tr[2]/td"
+      },
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Log Out"
+      },
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

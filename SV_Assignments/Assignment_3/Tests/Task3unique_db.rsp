@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Results name="Task3unique_db">
+
+
+    <Result node="JDBC_unique">
+      <content charset="UTF-8" type="xstream"><![CDATA[<com.itko.lisa.jdbc.JDBCResultSetCache>
+  <rows>
+    <list>
+      <string>abc@test.com</string>
+      <string>def</string>
+      <string>cde</string>
+      <string>cccccc</string>
+      <string>abc_def</string>
+    </list>
+  </rows>
+  <columns>
+    <string>EMAILADDRESS</string>
+    <string>FIRSTNAME</string>
+    <string>LASTNAME</string>
+    <string>PASSWORD</string>
+    <string>USERNAME</string>
+  </columns>
+  <maxRows>2147483647</maxRows>
+  <columnCount>5</columnCount>
+</com.itko.lisa.jdbc.JDBCResultSetCache>]]></content>
+    </Result>
+
+
+</Results>

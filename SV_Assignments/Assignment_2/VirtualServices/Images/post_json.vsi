@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceImage buildNumber="10.0.0.431" created="2017-06-19.10:19:10.977" id="97" lastModified="2017-06-19.10:19:41.678" name="post_json" version="10.0.0">
+<st>
+<t id="96" nd="true">
+<sp>
+<t id="100">
+<rq id="101" op="POST /my/rest/service/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">my</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">service</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/my/rest/service</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="102" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#xd;
+  "output": {&#xd;
+    "hundredPercentMatch": true,&#xd;
+    "streetLineMatch": true,&#xd;
+    "cityStatePostalMatch": true,&#xd;
+    "cleansedAddress": {&#xd;
+      "address1": "6201 Windhaven Pkwy",&#xd;
+      "address2": "Apt 1025",&#xd;
+      "city": "Plano",&#xd;
+      "stateOrProvinceCode": "TX",&#xd;
+      "postalCode": "75093",&#xd;
+      "countryCode": "US"&#xd;
+    },&#xd;
+    "standarizedAddress": {&#xd;
+      "address1": "6201 WINDHAVEN PKWY",&#xd;
+      "address2": "APT 1025",&#xd;
+      "city": [&#xd;
+        "PLANO"&#xd;
+      ],&#xd;
+      "stateOrProvinceCode": "TX",&#xd;
+      "postalCode": "750932104",&#xd;
+      "countryCode": "US",&#xd;
+      "residential": false&#xd;
+    },&#xd;
+    "alerts": []&#xd;
+  },&#xd;
+  "successful": true&#xd;
+}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="103" op="POST /my/rest/service/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">my</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">service</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/my/rest/service</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="104" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">{&#xd;
+  "output": {&#xd;
+    "hundredPercentMatch": true,&#xd;
+    "streetLineMatch": true,&#xd;
+    "cityStatePostalMatch": true,&#xd;
+    "cleansedAddress": {&#xd;
+      "address1": "6201 Windhaven Pkwy",&#xd;
+      "address2": "Apt 1025",&#xd;
+      "city": "Plano",&#xd;
+      "stateOrProvinceCode": "TX",&#xd;
+      "postalCode": "75093",&#xd;
+      "countryCode": "US"&#xd;
+    },&#xd;
+    "standarizedAddress": {&#xd;
+      "address1": "6201 WINDHAVEN PKWY",&#xd;
+      "address2": "APT 1025",&#xd;
+      "city": [&#xd;
+        "PLANO"&#xd;
+      ],&#xd;
+      "stateOrProvinceCode": "TX",&#xd;
+      "postalCode": "750932104",&#xd;
+      "countryCode": "US",&#xd;
+      "residential": false&#xd;
+    },&#xd;
+    "alerts": []&#xd;
+  },&#xd;
+  "successful": true&#xd;
+}</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="99" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;
+    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Not Found&lt;/h1&gt;
+        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+        &lt;hr/&gt;
+        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;
+        &lt;br/&gt;&lt;font size="-2"&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="98" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;
+    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Not Found&lt;/h1&gt;
+        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+        &lt;hr/&gt;
+        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;
+        &lt;br/&gt;&lt;font size="-2"&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</bd>
+</rp>
+</usrr>
+</serviceImage>

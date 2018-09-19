@@ -1,0 +1,15 @@
+Application performance is very critical to organizations. Today, we live in a world of application economy where it is very important for an organization to have high performing applications as in most cases the applications becomes the first point of contact for customers with an organization. CA Application Test and Service Virtualization helps with not only testing the application performance but also with simulating unavailable systems, costly 3rd party systems, systems which lack scalability etc. to remove constraints. They also help shift left performance testing and perform component level performance testing by simulating dependent systems
+
+the basic concept from a Test Automation view is that one spins up Coordinator and Simulator servers under a Registry to execute the tests and generate the desired number of concurrent virtual users (the load).  As a general rule, one Simulator can support up to 250 virtual users.  The actual number supported by a Simulator is driven by the environmental factors (OS, RAM, CPU, etc) as well as the design and complexity of the test case.  Multiple Simulators can communicate with a single Coordinator.
+
+ 
+
+The number of virtual users, the spread of these users across the available Simulators, the length of time that the test executes, ramp patterns, and all the performance characteristics can be specified in the Staging Document.  And, the test case or suites provide the actual test case execution steps. 
+
+You can do load/performance test in Devtest, by creating Staging doc where you can give your load pattern details in Basic tab.
+
+You need to use a Performance license for any use of DevTest VSE in a performance environment.
+
+First, without it, DevTest will throttle your response if they are above 10 tps. Normally, you can see an exception in your log files saying more or less that your response has been postponed. This has no impact for functional test, as the delay is ver short, but will make it unusable for many performance use case.
+
+Second, performance license will allow you to change the number of thread allowed by virtual service. This is a property available both in your web console, or when you deploy a virtual service. This property will allow you to handle more load on a single VS by parallelizing it (with functional VSE, this is 1 thread only)

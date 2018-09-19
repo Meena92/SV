@@ -1,0 +1,10 @@
+{
+  "USER": {
+    "emailAddress": "lisa.simpson@itko.com",
+    "firstName": "lisa",
+    "lastName": "simpson",
+    "password": "60fAFoq+W0R4HrLgsfPodkWRw9I=",
+    "phoneNumber": "",
+    "username": "lisa_simpson"
+  }
+}

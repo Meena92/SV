@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:bookAppointment xmlns:ns0="aps.mLogistics.appBooking.v2">
+   <ns0:geId>1845446504221697539432552871293144075394</ns0:geId>
+   <ns0:sourceApplicationId>SBL</ns0:sourceApplicationId>
+   <ns0:syncId>5-5JBDJ1IL</ns0:syncId>
+   <ns0:selectedSlot>
+      <ns0:id>12788648</ns0:id>
+   </ns0:selectedSlot>
+</ns0:bookAppointment>

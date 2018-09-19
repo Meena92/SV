@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <GetSizeByKeyItemRequest version="1.0">
+         <deptNumber>123</deptNumber>
+         <!--1 or more repetitions:-->
+         <keyItemNumber>48</keyItemNumber>
+      </GetSizeByKeyItemRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

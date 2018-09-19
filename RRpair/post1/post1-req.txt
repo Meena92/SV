@@ -1,0 +1,4 @@
+POST /maiviewer/api/datos-expedientes HTTP/1.1
+Content-Type: application/json
+ 
+{"data":{"policy": "555129482","codCliente": "0","name": "PHOENIXTEST","idioma": "tn"}}
